@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+body{
+    background-color: darksalmon;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    color: transparent;
+    -webkit-text-fill-color:bisque;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.QuoteBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 40vh;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 9px 4px whitesmoke;
+    border: 1px solid black;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    padding: 5px;
+    transition: all 1200ms ease-in-out;
+    transform-style: preserve-3d;
+}
+
+
+.QuoteTitle{
+    font-family: "Nerko One", cursive;
+    font-size: 40px;
+    padding: inherit;
+    margin: auto;
+    color:salmon;
+    text-shadow: 6px 3px 2px pink;
+}
+
+.author{
+    font-family: "New Amsterdam", sans-serif;
+    color:coral;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+.generate{
+    background-color: dimgrey;
+    color: azure;
+    padding: 16px ;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.flip{
+    transform: rotateY(360deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .QuoteBox{
+        width: 90vw;
+        overflow: auto;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .QuoteTitle{
+        font-size: 30px;
+        contain: content;
+    }
+
+
+}
